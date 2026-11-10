@@ -1,0 +1,19 @@
+.build/
+.swiftpm/
+build/
+.DS_Store
+xcuserdata/
+
+gpui/target/
+
+# Local listening sessions, user settings, diagnostics and source backups.
+Verification/*
+!Verification/GPUIBridgeChecks.swift
+!Verification/VALIDATION.md
+*.pcm
+*.profraw
+*.xcresult/
+.env
+.env.*
+*.key
+*.p12

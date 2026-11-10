@@ -1,0 +1,7 @@
+Filter Settings file
+# 仅用于验证导入格式，请根据实际测量生成自己的参数。
+Equaliser: Generic
+Preamp: -3.0 dB
+Filter 1: ON PK Fc 100.0 Hz Gain -3.0 dB Q 2.0
+Filter 2: OFF PK Fc 1000.0 Hz Gain 0.0 dB Q 1.0
+Filter 3: ON HSC Fc 8000.0 Hz Gain -1.0 dB Q 0.707

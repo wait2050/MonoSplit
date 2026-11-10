@@ -1,0 +1,39 @@
+name: Release MonoSplit
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    uses: ./.github/workflows/ci.yml
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: MonoSplit-macOS-arm64
+          path: release
+      - name: Publish verified build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          case "$RELEASE_TAG" in v*) ;; *) echo 'Run against a version tag'; exit 1 ;; esac
+          (cd release && sha256sum *.zip > SHA256SUMS)
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" release/*.zip release/SHA256SUMS --clobber
+          else
+            gh release create "$RELEASE_TAG" release/*.zip release/SHA256SUMS --verify-tag \
+              --title "MonoSplit $RELEASE_TAG" --notes-file RELEASE_NOTES.md
+          fi

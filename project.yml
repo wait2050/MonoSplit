@@ -1,0 +1,29 @@
+name: MonoSplit
+options:
+  deploymentTarget:
+    macOS: '15.4'
+packages:
+  MonoSplitKit:
+    path: .
+targets:
+  MonoSplit:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/MonoSplit
+      - path: Resources/AppIcon.icns
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.monosplit.app
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_VERSION: '6.0'
+        CODE_SIGN_IDENTITY: '-'
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: YES
+    dependencies:
+      - package: MonoSplitKit
+        product: MonoSplitCore
+    scheme:
+      gatherCoverageData: false

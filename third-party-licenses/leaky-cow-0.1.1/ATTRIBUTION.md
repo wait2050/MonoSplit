@@ -1,0 +1,11 @@
+# leaky-cow 0.1.1
+
+Declared license: MIT / Apache-2.0
+
+Upstream authors: Michael Howell <michael@notriddle.com>
+Repository: https://github.com/notriddle/rust-leaky-cow
+
+Original source archive: https://static.crates.io/crates/leaky-cow/leaky-cow-0.1.1.crate
+
+Package-provided copyright and license notices are preserved alongside this attribution.
+Standard license reference texts are in ../terms/. The package's declared OR alternatives remain alternatives.

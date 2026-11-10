@@ -1,0 +1,15 @@
+#!/bin/zsh
+set -euo pipefail
+cd "${0:A:h:h}"
+configuration="${1:-release}"
+swift build -c "$configuration" --triple "$(uname -m)-apple-macosx15.4"
+binary_directory="$(swift build -c "$configuration" --triple "$(uname -m)-apple-macosx15.4" --show-bin-path)"
+app_directory="$PWD/build/MonoSplit.app"
+mkdir -p "$app_directory/Contents/MacOS" "$app_directory/Contents/Resources"
+cp "$binary_directory/MonoSplit" "$app_directory/Contents/MacOS/MonoSplit"
+cp Resources/Info.plist "$app_directory/Contents/Info.plist"
+swift scripts/make-icon.swift "$PWD/build"
+iconutil -c icns build/AppIcon.iconset -o "$app_directory/Contents/Resources/AppIcon.icns"
+codesign --force --sign - "$app_directory"
+codesign --verify --strict "$app_directory"
+printf '\n%s\n' "$app_directory"

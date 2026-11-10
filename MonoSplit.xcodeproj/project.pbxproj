@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088ABA30F309703BC60F7167 /* TuningSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC967BEFBB07CEE7EF00BD4 /* TuningSheets.swift */; };
+		1B374C9DC77AB74E8B55256C /* MonoSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8476D9DBB1F4614B269F3 /* MonoSplitApp.swift */; };
+		4D20A80CA2580DAE96F77112 /* ChannelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69E9297867BCDE2B65F8BE /* ChannelEditor.swift */; };
+		5D8AFFAB79663F49D5BA9C3A /* MonoSplitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 55A97418069703844230321E /* MonoSplitCore */; };
+		63188F42ED0512039E8B9379 /* AudioPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD4D733C025D1194482838 /* AudioPresentation.swift */; };
+		7354FD7D374240251587CABD /* CoreAudioHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66457B96F0082A20AADA7D7 /* CoreAudioHost.swift */; };
+		7B6325379CE101769EECA340 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936BD63649E9208ADE17138 /* AppModel.swift */; };
+		9CC95CA5F0AA0AB3D7C02CDC /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE6CE94E6FA58EC856E25 /* Views.swift */; };
+		BB3B408B8612E2BAE8F04F8E /* ResponsePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61421318A038CD8105D8D71C /* ResponsePlot.swift */; };
+		D4F965CE490CD2299D966703 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BC1B2C898A04EC24C06819E5 /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EC967BEFBB07CEE7EF00BD4 /* TuningSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningSheets.swift; sourceTree = "<group>"; };
+		1B6C107BA3C5731006EB661B /* MonoSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonoSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCEE6CE94E6FA58EC856E25 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		5936BD63649E9208ADE17138 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		61421318A038CD8105D8D71C /* ResponsePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePlot.swift; sourceTree = "<group>"; };
+		AEBD4D733C025D1194482838 /* AudioPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPresentation.swift; sourceTree = "<group>"; };
+		BAE8476D9DBB1F4614B269F3 /* MonoSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoSplitApp.swift; sourceTree = "<group>"; };
+		BC1B2C898A04EC24C06819E5 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		C66457B96F0082A20AADA7D7 /* CoreAudioHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAudioHost.swift; sourceTree = "<group>"; };
+		D75790B6E932301F32826873 /* MonoSplit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonoSplit; path = .; sourceTree = SOURCE_ROOT; };
+		EB69E9297867BCDE2B65F8BE /* ChannelEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEditor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A7DC326F1123B70244B6484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8AFFAB79663F49D5BA9C3A /* MonoSplitCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50AFE68574F7F8CBF7705EEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C107BA3C5731006EB661B /* MonoSplit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A475C2323BA726628521CC4E = {
+			isa = PBXGroup;
+			children = (
+				A7DBF961AD44A09C20B69884 /* MonoSplit */,
+				A80087DD6B4FBF1A767421F7 /* Packages */,
+				C201B2989FF7780C899219BA /* Resources */,
+				50AFE68574F7F8CBF7705EEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7DBF961AD44A09C20B69884 /* MonoSplit */ = {
+			isa = PBXGroup;
+			children = (
+				5936BD63649E9208ADE17138 /* AppModel.swift */,
+				AEBD4D733C025D1194482838 /* AudioPresentation.swift */,
+				EB69E9297867BCDE2B65F8BE /* ChannelEditor.swift */,
+				C66457B96F0082A20AADA7D7 /* CoreAudioHost.swift */,
+				BAE8476D9DBB1F4614B269F3 /* MonoSplitApp.swift */,
+				61421318A038CD8105D8D71C /* ResponsePlot.swift */,
+				0EC967BEFBB07CEE7EF00BD4 /* TuningSheets.swift */,
+				3FCEE6CE94E6FA58EC856E25 /* Views.swift */,
+			);
+			name = MonoSplit;
+			path = Sources/MonoSplit;
+			sourceTree = "<group>";
+		};
+		A80087DD6B4FBF1A767421F7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D75790B6E932301F32826873 /* MonoSplit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C201B2989FF7780C899219BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC1B2C898A04EC24C06819E5 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07263F004929D2CC0D75AE6C /* MonoSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F522B83CB27ABE72E71E661D /* Build configuration list for PBXNativeTarget "MonoSplit" */;
+			buildPhases = (
+				DD169B5843B6C23F9CC70707 /* Sources */,
+				61A4C4D18A1EDCBB9E6C45AC /* Resources */,
+				0A7DC326F1123B70244B6484 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonoSplit;
+			packageProductDependencies = (
+				55A97418069703844230321E /* MonoSplitCore */,
+			);
+			productName = MonoSplit;
+			productReference = 1B6C107BA3C5731006EB661B /* MonoSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51D2314BF8E17001BCBA139C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					07263F004929D2CC0D75AE6C = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BC47204FDCE5357D28B9926E /* Build configuration list for PBXProject "MonoSplit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A475C2323BA726628521CC4E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C7E70FCD55CEBB38227D81E8 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 50AFE68574F7F8CBF7705EEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07263F004929D2CC0D75AE6C /* MonoSplit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61A4C4D18A1EDCBB9E6C45AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F965CE490CD2299D966703 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD169B5843B6C23F9CC70707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6325379CE101769EECA340 /* AppModel.swift in Sources */,
+				63188F42ED0512039E8B9379 /* AudioPresentation.swift in Sources */,
+				4D20A80CA2580DAE96F77112 /* ChannelEditor.swift in Sources */,
+				7354FD7D374240251587CABD /* CoreAudioHost.swift in Sources */,
+				1B374C9DC77AB74E8B55256C /* MonoSplitApp.swift in Sources */,
+				BB3B408B8612E2BAE8F04F8E /* ResponsePlot.swift in Sources */,
+				088ABA30F309703BC60F7167 /* TuningSheets.swift in Sources */,
+				9CC95CA5F0AA0AB3D7C02CDC /* Views.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F341CE6D71920F899EF6342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monosplit.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		4938FF38D9588D074D6D89EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83B178EABB6815FD3DEEA438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monosplit.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8CD2A93B9FCC968C92193425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC47204FDCE5357D28B9926E /* Build configuration list for PBXProject "MonoSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4938FF38D9588D074D6D89EC /* Debug */,
+				8CD2A93B9FCC968C92193425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F522B83CB27ABE72E71E661D /* Build configuration list for PBXNativeTarget "MonoSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B178EABB6815FD3DEEA438 /* Debug */,
+				3F341CE6D71920F899EF6342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C7E70FCD55CEBB38227D81E8 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55A97418069703844230321E /* MonoSplitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MonoSplitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 51D2314BF8E17001BCBA139C /* Project object */;
+}

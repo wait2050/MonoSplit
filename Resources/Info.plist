@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>MonoSplit</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.monosplit.app</string>
+	<key>CFBundleName</key>
+	<string>MonoSplit</string>
+	<key>CFBundleDisplayName</key>
+	<string>MonoSplit</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.2</string>
+	<key>CFBundleVersion</key>
+	<string>5</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>15.4</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>MonoSplit 需要捕获系统音频，将其混合为单声道并为音箱进行独立分频、EQ 和延迟处理。</string>
+</dict>
+</plist>

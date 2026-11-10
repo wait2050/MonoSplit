@@ -1,0 +1,50 @@
+name: Build and test MonoSplit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      - uses: dtolnay/rust-toolchain@1.94.1
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: gpui
+      - name: Swift and PCM tests
+        run: |
+          swift test
+          ./scripts/check-pcm-bridge.sh
+          ./scripts/check-gpui-bridge.sh
+      - name: Build app and test GPUI frontend
+        run: |
+          ./scripts/build-finetune-bridge-app.sh
+          cargo test --release --manifest-path gpui/Cargo.toml --locked
+          codesign --verify --deep --strict build/MonoSplitFineTune.app
+      - name: Package app and notices
+        run: |
+          mkdir -p build/release
+          VERSION="$(python3 -c 'import tomllib; print(tomllib.load(open("gpui/Cargo.toml", "rb"))["package"]["version"])')"
+          ditto -c -k --sequesterRsrc --keepParent build/MonoSplitFineTune.app "build/release/MonoSplit-v$VERSION-macOS-arm64.zip"
+          unzip -tq "build/release/MonoSplit-v$VERSION-macOS-arm64.zip"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MonoSplit-macOS-arm64
+          path: build/release/*.zip
+          if-no-files-found: error
+          retention-days: 30
